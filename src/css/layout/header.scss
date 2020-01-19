@@ -1,0 +1,48 @@
+.header {
+  position: relative;
+  width: 100%;
+  display: block;
+  height: $header;
+}
+
+.header__container {
+  @include container;
+  padding-top: $p;
+  padding-bottom: $p;
+  text-align: center;
+  @include mobile {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+.header__logo {
+  position: relative;
+  width: 18rem;
+  margin: 0 auto;
+  @include mobile {
+    width: 80%;
+    margin-left: 0;
+    img {
+      position: relative;
+      width: 100%;
+    }
+  }
+}
+
+.header__nav-toggle {
+  position: relative;
+  width: 20%;
+  cursor: pointer;
+  span {
+    font-size: 0.7rem;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
+.header__nav-toggle-sr-text {
+  @include sr-only;
+}

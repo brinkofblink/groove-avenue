@@ -1,0 +1,39 @@
+.disco-ball {
+  position: fixed;
+  top: -25vw;
+  left: sizes(auto 25vw auto), pluck(1);
+  width: 25vw;
+  height: 25vw;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: #dfdbe5;
+  box-shadow: inset -10px -10px 40px 30px rgba(#000, 0.3);
+  transition: transform 0.8s ease;
+  @include disco-mode {
+    transform: translate3d(0,20vw,0);
+  }
+}
+.disco-ball__inner {
+  position: absolute;
+  top: -100vw;
+  left: -55vw;
+  right: -37vw;
+  bottom: -10vw;
+  opacity: 0.2;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg  xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%239278FF' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 3%;
+  border-radius: 100%;
+  transform-origin: center;
+  animation-name: spin;
+  animation-duration: 50s;
+  animation-timing-function: linear;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate3d(0,0,1,0deg); }
+  50% { transform: rotate3d(0,0,1,180deg); }
+  100% { transform: rotate3d(0,0,1,360deg); }
+}

@@ -1,0 +1,46 @@
+$palettes: (
+    red: (
+      alt:         #F4D6CE,
+      base:        #E63F3F,
+      neon:        rgb(255, 89, 89)
+    ),
+    blue: (
+      alt:         #76A5D0,
+      base:        #1924FB,
+      neon:        rgb(146, 120, 255)
+    ),
+    green: (
+      alt:         #C0DBA7,
+      base:        #B1EF2E,
+      neon:        rgb(85, 255, 93)
+    ),
+    turquoise: (
+      alt:         #86CDA3,
+      base:        #50FA99,
+      neon:        rgb(34, 255, 235)
+    ),
+    purple: (
+      alt:         #CFA5DE,
+      base:        #C500FF,
+      neon:        rgb(166, 31, 249)
+    ),
+    orange: (
+      alt:         #E2C594,
+      base:        #FFA500,
+      neon:        rgb(255, 120, 10)
+    ),
+    yellow: (
+      alt:         #FCC162,
+      logo:        #FBDA03,
+      base:        #F7E319,
+      neon:        rgb(255, 230, 9)
+    ),
+    grey: (
+      base:        #4A4A4A,
+      light:       #AAAAAA,
+    ),
+);
+
+@function c($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}

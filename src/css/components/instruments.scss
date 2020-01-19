@@ -1,0 +1,199 @@
+.instruments-banner__instruments {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-end;
+  align-items: flex-end;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  z-index: 1;
+}
+
+.instruments__sax {
+  width: 10%;
+  svg {
+    .main-colour {
+      fill: c(red);
+    }
+  }
+  @include disco-mode {
+    svg {
+      .main-colour {
+        fill: c(red, neon);
+      }
+    }
+  }
+}
+.instruments__trumpet {
+  width: 4.5%;
+  svg {
+    .main-colour {
+      fill: c(blue);
+    }
+  }
+  @include disco-mode {
+    svg {
+      .main-colour {
+        fill: c(blue, neon);
+      }
+    }
+  }
+}
+.instruments__trombone {
+  width: 8%;
+  svg {
+    .main-colour {
+      fill: c(green);
+    }
+  }
+  @include disco-mode {
+    svg {
+      .main-colour {
+        fill: c(green, neon);
+      }
+    }
+  }
+}
+.instruments__keys {
+  width: 6%;
+  svg {
+    .main-colour {
+      fill: c(orange);
+    }
+  }
+  @include disco-mode {
+    svg {
+      .main-colour {
+        fill: c(orange, neon);
+      }
+    }
+  }
+}
+.instruments__kit {
+  width: 19%;
+  svg {
+    .main-colour {
+      fill: c(red);
+    }
+  }
+  @include disco-mode {
+    svg {
+      .main-colour {
+        fill: c(red, neon);
+      }
+    }
+  }
+}
+.instruments__mic {
+  width: 6%;
+  svg {
+    .main-colour {
+      fill: c(yellow);
+    }
+  }
+  @include disco-mode {
+    svg {
+      .main-colour {
+        fill: c(yellow, neon);
+      }
+    }
+  }
+}
+.instruments__guitar {
+  width: 6%;
+  svg {
+    .main-colour {
+      fill: c(green);
+    }
+  }
+  @include disco-mode {
+    svg {
+      .main-colour {
+        fill: c(green, neon);
+      }
+    }
+  }
+}
+.instruments__bass {
+  width: 7%;
+  svg {
+    .main-colour {
+      fill: c(purple, neon);
+    }
+  }
+  @include disco-mode {
+    svg {
+      .main-colour {
+        fill: c(purple, neon);
+      }
+    }
+  }
+}
+
+.instruments-banner__dancefloor {
+  position: relative;
+  height: 30vw;
+  display: block;
+  overflow: hidden;
+  margin-top: -6vw;
+}
+
+.dancefloor__3d__container {
+  height: 60vw;
+  width: 100vw;
+  position: relative;
+  perspective: 800px;
+  perspective-origin: 50% -50%;
+  z-index: 0;
+  .dancefloor__3d__container__inner {
+    width: 100%;
+    height: 100%;
+    transform: rotate3d(1,0,0,90deg);
+    transform-style: preserve-3d;
+    transform-origin: 50% 0;
+    svg {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      rect.even {
+        fill: rgba(#ebebeb, 0);
+      }
+      rect.odd {
+        fill: rgba(#ebebeb, 1);
+      }
+      @include disco-mode {
+        rect {
+          fill: rgba(#ebebeb, 0);
+        }
+
+        rect:nth-of-type(7n) {
+          @include animateSVGFill(red, 6s,  0s);
+        }
+        rect:nth-of-type(7n - 1) {
+          @include animateSVGFill(yellow, 6s,  1.5s);
+        }
+        rect:nth-of-type(7n - 2) {
+          @include animateSVGFill(white, 6s,  3s);
+        }
+        rect:nth-of-type(7n - 3) {
+          @include animateSVGFill(blue, 6s,  0s);
+        }
+        rect:nth-of-type(7n - 4) {
+          @include animateSVGFill(turquoise, 6s, 1.5s);
+        }
+        rect:nth-of-type(7n - 5) {
+          @include animateSVGFill(purple, 6s,  3s);
+        }
+        rect:nth-of-type(7n - 6) {
+          @include animateSVGFill(white, 6s,  4.5s);
+        }
+        rect:nth-of-type(3n) {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

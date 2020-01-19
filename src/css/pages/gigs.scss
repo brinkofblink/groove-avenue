@@ -1,0 +1,15 @@
+.gigs {
+  li {
+    display: flex;
+    justify-content: justify-content;
+    a {
+      margin-left: 2rem;
+      color: c(blue);
+    }
+  }
+  date {
+    position: relative;
+    width: 4rem;
+    color: c(grey, light);
+  }
+}

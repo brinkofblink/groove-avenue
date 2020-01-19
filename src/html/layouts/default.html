@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groove Avenue • Funk and Soul Band • Bristol and Bath</title>
+    <meta name="title" content="Groove Avenue • Funk and Soul Band • Bristol and Bath">
+    <meta name="description" content="Get out your dancing shoes for one of Bristol's funkiest band!">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="{{root}}main.css">
+    {{> ie-scripts }}
+
+  </head>
+
+  <body class="page-{{ page }}">
+    {{> header }}
+    {{> nav }}
+    <main class="main">
+      <div class="barba-container">
+        {{> body}}
+      </div>
+    </main>
+
+    {{> footer }}
+
+    <!--[if lt IE 9]>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script src="bower_components/ie-love/dist/ie-love.min.js"></script>
+    <![endif]-->
+    <script src="{{root}}main.js"></script>
+  </body>
+</html>

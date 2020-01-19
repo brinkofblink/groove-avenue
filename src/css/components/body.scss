@@ -1,0 +1,7 @@
+body {
+  background-color: #fff;
+  transition: background 0.8s ease;
+  @include disco-mode {
+    background-color: hsl(292, 57%, 13%);
+  }
+}

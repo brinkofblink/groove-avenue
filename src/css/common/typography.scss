@@ -1,0 +1,33 @@
+body {
+  font-family: 'Varela Round', sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, {
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+ul {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.t-headline {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: c(grey);
+  max-width: 20rem;
+}
+
+.t-body {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  max-width: 20rem;
+}

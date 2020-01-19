@@ -1,0 +1,55 @@
+<div class="content">
+  <div class="r1-2">
+    <div class="t-headline">
+      Let us bring the funk to you
+    </div>
+  </div>
+  <div class="r1-2 t-body">
+    <div class="t-headline">
+      <!-- <a href="#">bookings@grooveavenue.co.uk</a> -->
+    </div>
+  </div>
+</div>
+<div class="content">
+  <div class="form">
+    <form action="https://formspree.io/tom.s.haskins@gmail.com" method="post">
+      <div class="r1-2">
+      <div class="form__item">
+        <label for="name">Your name:</label>
+        <input type="text" name="name" placeholder="Disco Stu">
+      </div>
+      <div class="form__item">
+        <label for="email">Email address:</label>
+        <input type="email" name="email" placeholder="horn@example.com">
+      </div>
+      <div class="form__item">
+        <label for="phone">Phone number:</label>
+        <input type="tel" name="phone" placeholder="07123 456 789">
+      </div>
+      </div>
+      <div class="r1-2">
+      <div class="form__item">
+        <label for="message">Message:</label>
+        <textarea name="message" name="message" rows="4" cols="80"></textarea>
+      </div>
+      <div class="form__item">
+        <label>How should we contact you?</label>
+        <div class="row halves">
+        <p class="form__item__answer">
+          <input type="radio" name="contactphone" value="phone" id="contactphone">
+          <label class="form__radio__label" for="contactphone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38"><rect class="form__radio-label--bg" width="38" height="38" style="fill:#ededed"/><rect class="form__radio-label--centre" x="7.02" y="6.93" width="23.98" height="23.98" style="fill:#76A5D0"/></svg><span>Phone</span></label>
+        </p>
+        <p class="form__item__answer">
+          <input type="radio" name="contactphone" value="phone" id="contactphone">
+          <label class="form__radio__label" for="contactphone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38"><rect class="form__radio-label--bg" width="38" height="38" style="fill:#ededed"/><rect class="form__radio-label--centre" x="7.02" y="6.93" width="23.98" height="23.98" style="fill:#76A5D0"/></svg><span>Email</span></label>
+        </p>
+      </div>
+    </div>
+    <input type="hidden" name="_subject" value="New gig enquiry!" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="submit" class="button" value="Send message" >
+  </div>
+    </form>
+  </div>
+</div>
+{{> instruments }}

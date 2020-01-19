@@ -1,0 +1,29 @@
+<nav class="nav">
+  <ul class="nav__container">
+    <li class="nav__item{{#ifpage 'index'}} active{{/ifpage}}">
+      <a href="/" class="nav__link">
+        Home
+      </a>
+    </li>
+    <li class="nav__item{{#ifpage 'band'}} active{{/ifpage}}">
+      <a href="band.html" class="nav__link">
+        Band and Setlist
+      </a>
+    </li>
+    <!-- <li class="nav__item{{#ifpage 'samples'}} active{{/ifpage}}">
+      <a href="samples.html" class="nav__link">
+        Samples
+      </a>
+    </li> -->
+    <li class="nav__item{{#ifpage 'gigs'}} active{{/ifpage}}">
+      <a href="gigs.html" class="nav__link">
+        Gigs
+      </a>
+    </li>
+    <li class="nav__item{{#ifpage 'book'}} active{{/ifpage}}">
+      <a href="/book.html" class="nav__link">
+        Book the band
+      </a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,27 @@
+.page-index {
+  .header__logo {
+    svg {
+      display: none;
+    };
+  }
+}
+
+.homepage__logo {
+  position: relative;
+  width: sizes(auto 60% auto), pluck(2);
+  margin-left: sizes(auto 60% auto), pluck(1);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  @include mobile {
+    width: sizes(auto 80% auto), pluck(2);
+    margin-left: sizes(auto 80% auto), pluck(1);
+    margin-top: 1rem;
+  }
+  @include disco-mode {
+    svg .letter {
+      stroke: #fff !important;
+      fill: c(purple) !important;
+    }
+  }
+}
