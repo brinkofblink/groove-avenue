@@ -8,7 +8,7 @@
     "build": "gulp build --production"
   },
   "engines": {
-    "node": ">= 6.1.0"
+    "node": ">= 11.0.0"
   },
   "author": "groove-avenue",
   "license": "UNLICENSED",
@@ -31,7 +31,7 @@
     "babel-register": "^6.7.2",
     "barba.js": "^1.0.0",
     "browser-sync": "^2.18.8",
-    "gulp": "gulpjs/gulp#4.0",
+    "gulp": "4.0",
     "gulp-babel": "^6.1.2",
     "gulp-cli": "^1.2.1",
     "gulp-concat": "^2.5.2",
